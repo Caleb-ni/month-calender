@@ -1,0 +1,46 @@
+body {
+    margin: 0;
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    font-family: cursive;
+    background-color: darkblue;
+    color: white;
+    align-items: center;
+}
+
+.container {
+    display: flex;
+    text-align: center;
+    
+}
+
+.mouse-event {
+    border: 1px solid lightgray;
+    margin: 40px;
+    min-width: 180px;
+    min-height: 100px;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    font-size: 30px;
+}
+
+.mouse-event h4 {
+    position: absolute;
+    top: -50px;
+    left: 50%;
+    transform: translateX(-50%);
+    white-space: nowrap;
+    font-weight: 100;
+    color: lightgray;
+    font-size: 16px;
+}
+
+
+@media (max-width: 750px) {
+    .container{
+        flex-direction: column;
+    }
+}
